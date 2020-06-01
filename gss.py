@@ -1,10 +1,17 @@
+
+# Copyright (c) 2019 Gurjit Singh
+
+# This source code is licensed under the MIT license that can be found in
+# the accompanying LICENSE file or at https://opensource.org/licenses/MIT.
+
+
 import os
 import subprocess
 import os.path as path
 
 
 eMail = input("\nEnter E-Mail ID for SSH Key\n> ")
-sshPass = input("\nSSH Key PassPhrase\n> ")
+sshPass = input("\nSSH Key PassPhrase (Non Empty PassPhrases will require prompts without ssh-agent running in background)\n> ")
 
 sshDir = path.join(path.expanduser("~"), ".ssh/")
 
